@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("fondo blanco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/* HEADER*/
+
+header{
+    background-color:rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover{
+    color: rgb(128, 128, 154);
+    transition: 0.3s;
+}
+
+/*HERO*/
+
+#container-hero{
+    position: relative;
+    text-align: center;
+}
+
+.imagen1{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/*TITULO*/
+.titulo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 42px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+/*TARJETAS IMAGENES*/
+.tarjeta{
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.catalogo-imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.catalogo-imagenes img{
+    width: 250px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.catalogo-imagenes img:hover{
+    transform: scale(1.05);
+}
+
+/*INTRODUCCION*/
+.introduction{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.introduction h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.introduction p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/*SERVICIOS*/
+.Servicios{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Servicios h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.Servicios h4{
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.Servicios ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Servicios ul ul{
+    margin-top: 10px;
+}
+
+.Servicios li{
+    margin-bottom: 20px;
+}
+
+.Servicios strong{
+    font-size: 22px;
+    color: rgb(128, 128, 154);
+}
+
+.Servicios h3{
+    margin-top: 30px;
+    color: #ddd;
+}
+
+/*NOSOTROS*/
+.Nosotros{
+    background-color: rgb(250, 245, 245);
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.Nosotros h2{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.Nosotros p{
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.Nosotros img{
+    margin-top: 20px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/*PORQUE ELEGIRNOS*/
+.porque{
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.porque h2{
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.porque ul{
+    list-style: none;
+}
+
+.porque li{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.porque img{
+    margin-top: 25px;
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+}
+
+/*CONTACTO*/
+#contactos h3{
+    text-align: center;
+}
+
+.contacto{
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*FORMULARIO*/
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+    padding: 20px;
+    margin-bottom:20px ;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/*BOTON*/
+button{
+    padding:12px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(128, 128, 154);
+}
+
+/*COPYRIGHT*/
+.copyright{
+    background-color: black;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px){
+
+    .titulo{
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .catalogo-imagenes{
+        gap: 1.5rem;
+    }
+
+    .catalogo-imagenes img{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .Nosotros img,
+    .porque img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    form{
+        padding: 20px;
+    }
+}
